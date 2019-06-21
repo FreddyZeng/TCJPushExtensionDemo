@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TCJPushExtensionDemo_Example' do
+  pod 'TCJPushExtensionDemo', :path => '../'
+
+  target 'TCJPushExtensionDemo_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
