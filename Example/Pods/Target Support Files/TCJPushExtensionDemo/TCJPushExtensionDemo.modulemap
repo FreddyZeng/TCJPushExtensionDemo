@@ -1,0 +1,6 @@
+framework module TCJPushExtensionDemo {
+  umbrella header "TCJPushExtensionDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

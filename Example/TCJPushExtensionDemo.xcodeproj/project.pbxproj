@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		37FC4CC4A6EA62D42EBD1EC6 /* TCJPushExtensionDemo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TCJPushExtensionDemo.podspec; path = ../TCJPushExtensionDemo.podspec; sourceTree = "<group>"; };
+		37FC4CC4A6EA62D42EBD1EC6 /* TCJPushExtensionDemo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TCJPushExtensionDemo.podspec; path = ../TCJPushExtensionDemo.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* TCJPushExtensionDemo_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCJPushExtensionDemo_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +39,9 @@
 		607FACE51AFB9204008FA782 /* TCJPushExtensionDemo_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCJPushExtensionDemo_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		75FFFC3009CFDA92A572DFA0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		75FFFC3009CFDA92A572DFA0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A07BCCD1802148F8DF95CF9E /* Pods_TCJPushExtensionDemo_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCJPushExtensionDemo_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2A4472301C8C4BE54358161 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A2A4472301C8C4BE54358161 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A7B2D462BA8E4A1291064088 /* Pods_TCJPushExtensionDemo_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCJPushExtensionDemo_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF2891948FCC4791D3FCC33 /* Pods-TCJPushExtensionDemo_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCJPushExtensionDemo_Example.release.xcconfig"; path = "Target Support Files/Pods-TCJPushExtensionDemo_Example/Pods-TCJPushExtensionDemo_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E244AD431F29F37CFDA26E17 /* Pods-TCJPushExtensionDemo_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCJPushExtensionDemo_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TCJPushExtensionDemo_Tests/Pods-TCJPushExtensionDemo_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +77,6 @@
 				E244AD431F29F37CFDA26E17 /* Pods-TCJPushExtensionDemo_Tests.debug.xcconfig */,
 				F6E5CB9C9E9129DD873A78D6 /* Pods-TCJPushExtensionDemo_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

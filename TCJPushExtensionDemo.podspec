@@ -31,7 +31,8 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'TCJPushExtensionDemo/Classes/**/*'
-  
+  #s.pod_target_xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '${PODS_CONFIGURATION_BUILD_DIR}' }
+  s.script_phase = { :name => 'CommonCrypto', :script => 'sh $PROJECT_DIR/../../install_common_crypto.sh', :execution_position => :before_compile }
   # s.resource_bundles = {
   #   'TCJPushExtensionDemo' => ['TCJPushExtensionDemo/Assets/*.png']
   # }
