@@ -31,24 +31,9 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'TCJPushExtensionDemo/Classes/**/*'
-  #s.pod_target_xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$PROJECT_DIR/Jpush/module.modulemap' }
-
-  #eval "cat <<EOF > "/Users/liming/Desktop/moduleaa.modulemap"
-  #module Jpush [system] {
-  #    header "JPushNotificationExtensionService.h"
-  #    export *
-  #}
-  #EOF
-  #"
-  #
-  #cat <<EOF > "${PROJECT_DIR}/Jpush/module.modulemap"
-  #module Jpush [system] {
-  #    header "JPushNotificationExtensionService.h"
-  #    export *
-  #}
-  #EOF
+  s.pod_target_xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$PROJECT_DIR/JPush' }
   
-  s.script_phase = { :name => 'CommonCrypto', :script => "touch \"${PROJECT_DIR}/Jpush/module.modulemap\"; \ncat <<EOF > \"${PROJECT_DIR}/Jpush/module.modulemap\"      \nmodule Jpush [system] {\n header \"JPushNotificationExtensionService.h\"      \nexport *\n} EOF", :execution_position => :before_compile }
+  s.script_phase = { :name => 'CommonCrypto', :script => "touch \"${PROJECT_DIR}/JPush/module.modulemap\"; \ncat <<EOF > \"${PROJECT_DIR}/JPush/module.modulemap\"\nmodule JPush [system] {\n\theader \"JPUSHService.h\"\n\texport *\n}EOF", :execution_position => :before_compile }
   # s.resource_bundles = {
   #   'TCJPushExtensionDemo' => ['TCJPushExtensionDemo/Assets/*.png']
   # }
