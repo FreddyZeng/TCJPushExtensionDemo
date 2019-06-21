@@ -48,7 +48,7 @@ TODO: Add long description of the pod here.
   #}
   #EOF
   
-  s.script_phase = { :name => 'CommonCrypto', :script => 'touch "${PROJECT_DIR}/Jpush/module.modulemap";   cat <<EOF >\n "${PROJECT_DIR}/Jpush/module.modulemap"\n module Jpush [system] {\n header "JPushNotificationExtensionService.h"\n export *}\n EOF', :execution_position => :before_compile }
+  s.script_phase = { :name => 'CommonCrypto', :script => "touch \"${PROJECT_DIR}/Jpush/module.modulemap\"; \ncat <<EOF > \"${PROJECT_DIR}/Jpush/module.modulemap\"      \nmodule Jpush [system] {\n header \"JPushNotificationExtensionService.h\"      \nexport *\n} EOF", :execution_position => :before_compile }
   # s.resource_bundles = {
   #   'TCJPushExtensionDemo' => ['TCJPushExtensionDemo/Assets/*.png']
   # }
